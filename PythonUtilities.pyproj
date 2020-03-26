@@ -25,26 +25,35 @@
     <Compile Include="Cython\Cythoned.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Cython\Examples\setup.py" />
+    <Compile Include="Cython\Examples\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Cython\setup.py" />
     <Compile Include="Cython\__init__.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Decorators.py" />
-    <Compile Include="Examples\__init__.py">
+    <Compile Include="Decorators\Examples\__init__.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Examples\Main_cython.py" />
-    <Compile Include="Examples\options_mc_cython.py" />
-    <Compile Include="ParamValidators.py" />
+    <Compile Include="Decorators\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Cython\Examples\Main_cython.py" />
+    <Compile Include="Cython\Examples\options_mc_cython.py" />
+    <Compile Include="Decorators\ParamValidators.py" />
     <Compile Include="__init__.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Examples\options_mc_cython.pyx" />
+    <Content Include="Cython\Examples\options_mc_cython.pyx" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Examples\" />
+    <Folder Include="Cython\Examples\" />
+    <Folder Include="Decorators\" />
     <Folder Include="Cython\" />
+    <Folder Include="Decorators\Examples\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
