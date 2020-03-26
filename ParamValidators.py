@@ -1,8 +1,8 @@
 ############################
 # ParamValidators.py
 ############################
-# Define parameter validations for class
-# functions.
+# Description:
+# * Parameter validations for functions.
 
 from varname import varname
 
